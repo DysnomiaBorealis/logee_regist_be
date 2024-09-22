@@ -20,6 +20,11 @@ app.use('/api/users', require('./routes/user')); // If you added user routes
 // Serve static files from the uploads directory (if applicable)
 app.use('/uploads', express.static('uploads'));
 
+// Root Route
+app.get('/', (req, res) => {
+    res.send('Welcome to Logee Registration Backend!');
+});
+
 // Error handling middleware
 app.use((err, req, res, next) => {
     console.error(err.stack);
