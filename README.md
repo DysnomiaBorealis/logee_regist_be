@@ -22,25 +22,31 @@ Technologies Used
 Key Functionalities
     
     User Authentication:
-        User login and registration are secured using JWT, ensuring only authorized users have access to the system.
+    User login and registration are secured using JWT, ensuring only authorized users have access to the system.
+    
     Business Registration:
-        Businesses can submit their company details, including name, bank information, and registration documents, which are uploaded and stored.
-        The backend processes these requests, storing the data securely in MongoDB.
+    Businesses can submit their company details, including name, bank information, and registration documents, which are uploaded and stored.
+    The backend processes these requests, storing the data securely in MongoDB.
+    
     CRUD Operations:
-        Full support for Create, Read, Update, and Delete operations for both users and businesses.
+    Full support for Create, Read, Update, and Delete operations for both users and businesses.
+    
     Database Integration:
-        Mongoose is used for schema management, ensuring efficient data validation and interaction with MongoDB.
+    Mongoose is used for schema management, ensuring efficient data validation and interaction with MongoDB.
 
 API Endpoints Authentication
+
     POST /api/auth/register: Register a new user.
     POST /api/auth/login: Login to receive an authentication token.
 
 Users
+
     GET /api/users: Get all registered users.
     GET /api/users/:id: Get user details by ID.
     PUT /api/users/:id: Update user information.
 
 Business
+
     POST /api/business/register: Register a new business.
     GET /api/business: Get a list of all registered businesses.
 
